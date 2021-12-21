@@ -164,6 +164,30 @@ const person = {
 };
 
 // task 15: từ object person trên lấy ra key của nó. result => ['firstName', 'lastName']
+function getKey(obj) {
+    return Object.keys(obj)
+}
+console.log(getKey(person))
+
+// task 16: từ object person trên lấy ra value của nó. result => ['John', 'Doe']
+function getValue(obj) {
+    return Object.values(obj)
+}
+console.log(getValue(person))
+
+// task 17: chuyển đổi object trên thành array. result mong đợi => [{firsName: 'John'}, {lastName: 'Doe'}]
+function objectToArray(obj) {
+    return Object.entries(obj);
+}
+console.log(objectToArray(person))
+
+// task 18: từ object person trên add thêm 1 field "age" vao object. kết qua mong đợi => { firstName: "John", lastName: "Doe", age: 100 };
+function addFieldToObject(obj, key, val) {
+    return obj.key = val;
+
+}
+let __age;
+console.log(addFieldToObject(obj, __age, 20))
 
 // task 21: viết 1 object sử dụng setter & getter để thêm mới value và lấy ra value. key word (Getter, setter)
 var obj = {
