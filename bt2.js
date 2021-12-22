@@ -70,28 +70,6 @@ console.log(('task 6: ' + ktnt(47, 3)))
 
 
 // task 7: Viết một class bao gồm 4 methods: add, update, remove, so sánh 
-class Student {
-    arr = [1, 2, 45, 5, 3, 5];
-    add(n) {
-        this.arr.push(n);
-    }
-    update(index, value) {
-        if (this.isExist(index)) {
-            this.arr[index] = value;
-        }
-    }
-    remove(index) {
-        if (this.isExist(index)) {
-            this.arr.splice(index, 1);
-        }
-    }
-    isExist(index) {
-        if (this.arr[index]) {
-            return true;
-        }
-        return false;
-    }
-}
 
 
 class Students {
