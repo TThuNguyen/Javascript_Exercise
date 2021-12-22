@@ -52,56 +52,6 @@ function sum(arr) {
 console.log(sum(arrNumber2));
 
 // task 6: Viết hàm đệ quy để biết một số là số nguyên tố
-function primeNumber(n) {
-    if (n < 2) {
-        return false;
-    } else {
-        for (var i = 2; i < n; i++) {
-            if (n % i === 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-}
-
-console.log(primeNumber(1))
-
-function primeNumber1(n) {
-    if (n < 2) {
-        return false;
-    } else if (n === 2) {
-        return true;
-    } else {
-        for (var i = 3; i < n; i += 2) {
-            if (n % i === 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-}
-console.log(primeNumber1(29))
-
-function primeNumber2(n) {
-    if (n < 2) {
-        return false;
-    } else if (n === 2) {
-        return true;
-    } else {
-        for (var i = 3; i <= Math.sqrt(n); i++) {
-            if (n % i === 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-}
-console.log(primeNumber2(3))
-
 
 function ktnt(n, a = 3) {
     if (n < 2) {
